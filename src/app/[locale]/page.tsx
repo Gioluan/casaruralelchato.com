@@ -66,8 +66,8 @@ export default async function HomePage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       {/* ============ HERO — asymmetric collage ============ */}
-      <section className="relative min-h-[100vh] w-full overflow-hidden bg-cream">
-        <div className="mx-auto max-w-[1600px] h-[100vh] min-h-[680px] grid grid-cols-1 md:grid-cols-12">
+      <section className="relative min-h-[100svh] w-full overflow-hidden bg-cream">
+        <div className="mx-auto max-w-[1600px] h-[100svh] min-h-[680px] grid grid-cols-1 md:grid-cols-12">
           {/* Left: main portrait photo of the house */}
           <div className="relative col-span-1 md:col-span-7 h-full">
             <Image
