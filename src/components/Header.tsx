@@ -48,8 +48,9 @@ export default function Header({ locale }: { locale: Locale }) {
             className="flex items-center gap-3 shrink-0"
             aria-label="Casa Rural el Chato"
           >
-            <span className="font-display text-lg md:text-xl tracking-tight text-forest-deep">
-              Casa Rural <span className="font-display-italic">el Chato</span>
+            <span className="font-display text-base sm:text-lg md:text-xl tracking-tight text-forest-deep">
+              <span className="hidden sm:inline">Casa Rural </span>
+              <span className="font-display-italic">el Chato</span>
             </span>
           </Link>
 
@@ -66,11 +67,9 @@ export default function Header({ locale }: { locale: Locale }) {
             ))}
           </nav>
 
-          {/* Right cluster: lang (desktop), reservar (always), hamburger (mobile) */}
+          {/* Right cluster: lang (always), reservar (always), hamburger (mobile) */}
           <div className="flex items-center gap-2 md:gap-3">
-            <div className="hidden md:block">
-              <LanguageSwitcher locale={locale} />
-            </div>
+            <LanguageSwitcher locale={locale} />
 
             {/* Reservar button — always visible, responsive size */}
             <a
