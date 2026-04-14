@@ -163,7 +163,7 @@ export default async function HomePage({
       </section>
 
       {/* ============ INTRO ============ */}
-      <section className="relative py-28 md:py-40 bg-cream">
+      <section className="relative py-28 md:py-40 bg-cream overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-2 gap-16 md:gap-24 items-center">
           <Reveal direction="left">
             <div className="relative">
@@ -511,7 +511,7 @@ export default async function HomePage({
       </section>
 
       {/* ============ LOCATION + Leaflet map ============ */}
-      <section id="como-llegar" className="py-28 md:py-40 bg-forest-deep text-cream">
+      <section id="como-llegar" className="py-28 md:py-40 bg-forest-deep text-cream overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 lg:px-10 grid md:grid-cols-2 gap-16 items-start">
           <Reveal direction="left">
             <div>
