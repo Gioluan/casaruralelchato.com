@@ -82,7 +82,7 @@ export default async function HomePage({
             <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/60 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:to-cream/20" />
 
             {/* Small house nameplate chip, overlay */}
-            <div className="absolute top-6 left-6 md:top-10 md:left-10 flex items-center gap-3 bg-cream/90 backdrop-blur px-4 py-2 text-[10px] tracking-[0.3em] uppercase text-forest-deep">
+            <div className="hidden md:flex absolute top-10 left-10 items-center gap-3 bg-cream/90 backdrop-blur px-4 py-2 text-[10px] tracking-[0.3em] uppercase text-forest-deep">
               <span className="w-1.5 h-1.5 rounded-full bg-ochre animate-pulse" />
               Casa · 1800s · Nº 24
             </div>
