@@ -49,7 +49,7 @@ export default function WhatsAppButton({ locale }: { locale: Locale }) {
 
   return (
     <div
-      className={`fixed bottom-6 left-6 z-[80] flex items-end gap-3 transition-all duration-700 ${
+      className={`fixed bottom-6 left-6 z-[80] flex items-end gap-3 transition-[transform,opacity] duration-700 ${
         mounted ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0 pointer-events-none"
       }`}
     >
@@ -66,7 +66,7 @@ export default function WhatsAppButton({ locale }: { locale: Locale }) {
         aria-label={t.ariaLabel}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
-        className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_-8px_rgba(37,211,102,0.55)] border-4 border-cream hover:scale-105 transition-transform duration-300"
+        className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] text-white shadow-lg border-4 border-cream hover:brightness-110 will-change-transform [backface-visibility:hidden]"
       >
         <svg
           viewBox="0 0 32 32"
