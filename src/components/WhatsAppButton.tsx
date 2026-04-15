@@ -66,7 +66,7 @@ export default function WhatsAppButton({ locale }: { locale: Locale }) {
         aria-label={t.ariaLabel}
         onMouseEnter={() => setShowTooltip(true)}
         onMouseLeave={() => setShowTooltip(false)}
-        className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_-8px_rgba(37,211,102,0.55)] ring-4 ring-cream hover:scale-105 hover:shadow-[0_14px_40px_-8px_rgba(37,211,102,0.7)] transition-all duration-300"
+        className="flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#25D366] text-white shadow-[0_10px_30px_-8px_rgba(37,211,102,0.55)] border-4 border-cream hover:scale-105 transition-transform duration-300"
       >
         <svg
           viewBox="0 0 32 32"
